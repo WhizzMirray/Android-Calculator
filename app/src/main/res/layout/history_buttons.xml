@@ -1,0 +1,25 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:id="@+id/histor_buttons"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/history_exp"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/history_selector"
+        android:textAlignment="textStart"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/history_res"
+        android:layout_gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/history_selector"
+        android:textAlignment="textEnd"
+        android:textSize="18sp" />
+</LinearLayout>

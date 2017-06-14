@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF212121</item>
+        <item name="colorPrimaryDark">#FF000000</item>
+        <item name="colorAccent">#FF80CBC4</item>
+
+
+        <!--To change the text styling of options menu items</item>-->
+        <!--To change the background of options menu-->
+        <item name="android:itemBackground">#FF303030</item>
+        <item name="android:colorBackground">#FF303030</item>
+        <item name="android:colorForeground">#FFFFFFFF</item>
+    </style>
+
+
+</resources>

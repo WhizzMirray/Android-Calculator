@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="_0">0</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_div">/</string>
+    <string name="_plus">+</string>
+    <string name="_eq">=</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="x">x</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="dot">.</string>
+    <string name="_minus">-</string>
+    <string name="sin">sin</string>
+    <string name="pi">π</string>
+    <string name="sroot">√</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="ln">ln</string>
+    <string name="log">log</string>
+    <string name="fact">!</string>
+    <string name="e">e</string>
+    <string name="pow">^</string>
+    <string name="lpar">(</string>
+    <string name="rpar">)</string>
+    <string name="erase">&#9003;</string>
+    <string name="cut">Cut</string>
+    <string name="paste">Paste</string>
+    <string name="copy">Copy</string>
+    <string name="percentage">%</string>
+    <string name="arccos">arccos</string>
+    <string name="arcsin">arcsin</string>
+    <string name="arctan">arctan</string>
+    <string name="rad">RAD</string>
+    <string name="deg">DEG</string>
+
+</resources>

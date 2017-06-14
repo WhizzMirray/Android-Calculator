@@ -1,0 +1,292 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AdvanceCalculator">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="INV"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press"
+                android:id="@+id/op_inv" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/sin"
+                android:id="@+id/op_sin"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/cos"
+                android:id="@+id/op_cos"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/tan"
+                android:id="@+id/op_tan"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/fact"
+                android:id="@+id/op_fact"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/ln"
+                android:id="@+id/op_ln"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/log"
+                android:id="@+id/op_log"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Ans"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press"
+                android:background="@drawable/num_selector"
+                android:id="@+id/num_ans" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="EXP"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press"
+                android:id="@+id/op_exp" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/sroot"
+                android:id="@+id/op_sroot"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/pow"
+                android:id="@+id/op_power"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/pi"
+                android:id="@+id/num_pi"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="DEG"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press"
+                android:id="@+id/op_deg" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/lpar"
+                android:id="@+id/op_lpar"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/rpar"
+                android:id="@+id/op_rpar"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/e"
+                android:id="@+id/num_e"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:onClick="advanced_press" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
